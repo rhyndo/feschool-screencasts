@@ -1,0 +1,147 @@
+/*
+ * Rating
+ * ---------------------- */
+
+.rating-wrapper .value,
+.rating-wrapper .rating {
+    font-size: 2em;
+}
+
+.rating-wrapper,
+.rating > a:before {
+	color: #bdc3c7;
+}
+
+.rating > a:after {
+	color: #f1c40f;
+}
+
+.rating-wrapper .value,
+.rating-wrapper .rating a { 
+    line-height: 1.2;
+}
+
+.rating { 
+	float: left;
+	pointer-events: none;
+}
+
+.rating.active {
+	pointer-events: auto;
+}
+
+.rating.active a:active {
+    position:relative;
+    top: 2px;
+    left: 1px;
+}
+
+.rating > a { 
+    float: right;
+    width: 1em;
+    height: 1em;
+	padding: 0 0.05em;
+	font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal; 
+    position: relative; 
+	box-sizing: content-box;
+}
+
+.rating > a:before,
+.rating > a:after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+	
+.rating > a:before {
+    content: "\f006";
+    z-index: 20;
+}
+
+.rating > a:after {
+    visibility: hidden;
+    content: "\f005";
+    z-index: 40;
+}
+
+/* Everything from here is to make the component actually usable in a website.
+ * Adding classes for a selected states and the ability to override them.
+ */
+
+.rating.r1 > a:nth-last-child(1):after,
+.rating.r2 > a:nth-last-child(1):after,
+.rating.r2 > a:nth-last-child(2):after,
+.rating.r3 > a:nth-last-child(1):after,
+.rating.r3 > a:nth-last-child(2):after,
+.rating.r3 > a:nth-last-child(3):after,
+.rating.r4 > a:nth-last-child(1):after,
+.rating.r4 > a:nth-last-child(2):after,
+.rating.r4 > a:nth-last-child(3):after,
+.rating.r4 > a:nth-last-child(4):after,
+.rating.r5 > a:nth-last-child(1):after,
+.rating.r5 > a:nth-last-child(2):after,
+.rating.r5 > a:nth-last-child(3):after,
+.rating.r5 > a:nth-last-child(4):after,
+.rating.r5 > a:nth-last-child(5):after { 
+    visibility: visible;
+}
+
+.rating.r1.r05 > a:nth-last-child(2):after,
+.rating.r2.r05 > a:nth-last-child(3):after,
+.rating.r3.r05 > a:nth-last-child(4):after,
+.rating.r4.r05 > a:nth-last-child(5):after {
+    width: 47%;
+    overflow: hidden;
+    visibility: visible;
+	text-align: right;
+}
+
+.rating.active:hover > a:after,
+.rating.active.r1.r05:hover > a:after,
+.rating.active.r2.r05:hover > a:after,
+.rating.active.r3.r05:hover > a:after,
+.rating.active.r4.r05:hover > a:after {
+    visibility: hidden;
+}
+
+.rating.active > a:hover:after,
+.rating.active > a:hover ~ a:after,
+.rating.active:hover > a:hover:after,
+.rating.active:hover > a:hover ~ a:after {
+    visibility: visible !important;
+    width: 90%;
+}
+
+.rating-wrapper:after {
+    display: block;
+    content: '';
+    clear: both;	
+}
+	
+.rating-wrapper .value {
+    display: inline-block;
+	padding-left: 0.3em;
+}
+
+.rating-wrapper .value .real-value { 
+}
+
+
+/*
+ * Articles on the subject. I didn't come up with all this myself!
+ * ------------------------------------------------------------------------------- 
+ * http://css-tricks.com/star-ratings/
+ * http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/
+ * */
+
+/*
+ * Other people's take on this
+ * ------------------------------------------------------------------------------- 
+ * http://css-tricks.com/star-ratings/
+ * http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/
+ * */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Star Rating with CSS</title>
+		<link rel="stylesheet" href="/css/common.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/css/form.css" type="text/css" media="screen">
+	</head>
+	<body>
+		<article>
+			<header>
+				<p>Better</p>
+				<h1>Star Rating with CSS</h1>
+			</header>
+
+			<section>
+				<h3>Empty &amp; Inactive</h3>
+				<p>Hover is disabled. No user input is allowed in this state. Take a look how the pointer doesn't change when you hover on the stars.</p>
+
+				<div class="rating-wrapper">
+					<div class="rating inactive">
+						<input type="radio" id="star5" name="rating1" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+						<input type="radio" id="star4" name="rating1" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+						<input type="radio" id="star3" name="rating1" value="3" /><label for="star3" title="Meh">3 stars</label>
+						<input type="radio" id="star2" name="rating1" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+						<input type="radio" id="star1" name="rating1" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+					</div>
+					<span class="value"><span class="real-value">0</span>/5</span>
+				</div>
+			</section>
+
+			<section>
+				<h3>Empty &amp; Active</h3>
+				<div class="rating-wrapper">
+					<div class="rating">
+						<input type="radio" id="star25" name="rating2" value="5" /><label for="star25" title="Rocks!">5 stars</label>
+						<input type="radio" id="star24" name="rating2" value="4" /><label for="star24" title="Pretty good">4 stars</label>
+						<input type="radio" id="star23" name="rating2" value="3" /><label for="star23" title="Meh">3 stars</label>
+						<input type="radio" id="star22" name="rating2" value="2" /><label for="star22" title="Kinda bad">2 stars</label>
+						<input type="radio" id="star21" name="rating2" value="1" /><label for="star21" title="Sucks big time">1 star</label>
+					</div>
+					<span class="value"><span class="real-value">0</span>/5</span>
+				</div>
+			</section>
+
+			<section>
+				<h3>Set &amp; Inactive</h3>
+				<div class="rating-wrapper">
+					<div class="rating inactive">
+						<input type="radio" id="star35" name="rating3" value="5" /><label for="star35" title="Rocks!">5 stars</label>
+						<input type="radio" id="star34" name="rating3" value="4" /><label for="star34" title="Pretty good">4 stars</label>
+						<input type="radio" id="star33" name="rating3" value="3" /><label for="star33" title="Meh">3 stars</label>
+						<input type="radio" id="star32" name="rating3" value="2" checked /><label for="star32" title="Kinda bad">2 stars</label>
+						<input type="radio" id="star31" name="rating3" value="1" /><label for="star31" title="Sucks big time">1 star</label>
+					</div>
+					<span class="value"><span class="real-value">0</span>/5</span>
+				</div>
+			</section>
+
+			<section>
+				<h3>Set &amp; Active</h3>
+				<div class="rating-wrapper">
+					<div class="rating">
+						<input type="radio" id="star45" name="rating4" value="5" /><label for="star45" title="Rocks!">5 stars</label>
+						<input type="radio" id="star44" name="rating4" value="4" /><label for="star44" title="Pretty good">4 stars</label>
+						<input type="radio" id="star43" name="rating4" value="3" checked /><label for="star43" title="Meh">3 stars</label>
+						<input type="radio" id="star42" name="rating4" value="2" /><label for="star42" title="Kinda bad">2 stars</label>
+						<input type="radio" id="star41" name="rating4" value="1" /><label for="star41" title="Sucks big time">1 star</label>
+					</div>
+					<span class="value"><span class="real-value">0</span>/5</span>
+				</div>
+			</section>
+
+			<footer>
+
+			</footer>
+		</article>
+	</body>
+</html>
