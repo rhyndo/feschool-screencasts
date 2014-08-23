@@ -102,10 +102,8 @@
 .rating.r2.r05 > a:nth-last-child(3):after,
 .rating.r3.r05 > a:nth-last-child(4):after,
 .rating.r4.r05 > a:nth-last-child(5):after {
-	width: 47%;
-	overflow: hidden;
+	content: '\e802';
 	visibility: visible;
-	text-align: right;
 }
 
 .rating.active:hover > a:after,
@@ -114,6 +112,7 @@
 .rating.active.r3.r05:hover > a:after,
 .rating.active.r4.r05:hover > a:after {
 	visibility: hidden;
+	content: "\e800";
 }
 
 .rating.active > a:hover:after,
@@ -137,7 +136,6 @@
 
 .rating-wrapper .value .real-value { 
 }
-
 
 /*
  * Articles on the subject. I didn't come up with all this myself!
