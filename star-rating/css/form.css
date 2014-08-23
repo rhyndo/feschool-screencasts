@@ -46,13 +46,25 @@
     color: #ddd;
 }
 
+.rating:not(:checked) > label:after,
 .rating:not(:checked) > label:before {
-	font-family: FontAwesome;
-    content: '\f005';
+	font-family: star-rating;
+	display: inline-block;
+}
+
+.rating:not(:checked) > label:before {
+    content: '\e801';
+}
+
+.rating > input:checked ~ label:before {
 }
 
 .rating > input:checked ~ label {
     color: #f70;
+}
+
+.rating > input:checked ~ label:after {
+	content: '\e800';
 }
 
 .rating:not(:checked) > label:hover,
